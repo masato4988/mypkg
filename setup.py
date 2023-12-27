@@ -26,6 +26,7 @@ setup(
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
             'talker_random = mypkg.talker_random:main',
+            'average = mypkg.average:main',
         ],
     },
 )

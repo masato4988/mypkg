@@ -6,7 +6,7 @@ import random
 class Talker_random():
     def __init__(self, node):
         self.pub = node.create_publisher(Int16, "random", 10)
-        node.create_timer(0.1, self.cb)
+        node.create_timer(0.5, self.cb)
 
     def cb(self):
         msg = Int16()
