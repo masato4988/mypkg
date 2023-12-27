@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
+            'talker_random = mypkg.talker_random:main',
         ],
     },
 )
