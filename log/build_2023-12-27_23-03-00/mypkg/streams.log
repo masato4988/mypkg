@@ -1,0 +1,55 @@
+[0.944s] Invoking command in '/home/u22c1001/ros2_ws/src/mypkg': PYTHONPATH=/home/u22c1001/ros2_ws/src/mypkg/build/mypkg/prefix_override:/home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build install --record /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed
+[1.154s] running egg_info
+[1.154s] creating build/mypkg/mypkg.egg-info
+[1.154s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[1.155s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.155s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[1.156s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[1.156s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[1.157s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.189s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.189s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.189s] running build
+[1.189s] running build_py
+[1.190s] creating /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build
+[1.190s] creating /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib
+[1.190s] creating /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.190s] copying mypkg/talker.py -> /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.190s] copying mypkg/listener.py -> /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.191s] copying mypkg/talker_random.py -> /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.191s] copying mypkg/listener_average.py -> /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.191s] copying mypkg/average.py -> /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.191s] copying mypkg/__init__.py -> /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.191s] running install
+[1.192s] running install_lib
+[1.193s] creating /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.193s] copying /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.194s] copying /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.194s] copying /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker_random.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.194s] copying /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener_average.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.195s] copying /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/average.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.195s] copying /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/__init__.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.195s] byte-compiling /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc
+[1.196s] byte-compiling /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc
+[1.196s] byte-compiling /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker_random.py to talker_random.cpython-38.pyc
+[1.197s] byte-compiling /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener_average.py to listener_average.cpython-38.pyc
+[1.197s] byte-compiling /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/average.py to average.cpython-38.pyc
+[1.198s] byte-compiling /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc
+[1.198s] running install_data
+[1.198s] creating /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/ament_index
+[1.199s] creating /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index
+[1.199s] creating /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.199s] copying resource/mypkg -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.199s] copying package.xml -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.199s] copying launch/talk_listen.launch.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.199s] copying launch/random_average.launch.py -> /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.199s] running install_egg_info
+[1.201s] Copying build/mypkg/mypkg.egg-info to /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.202s] running install_scripts
+[1.220s] Installing average script to /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.221s] Installing listener script to /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.221s] Installing listener_average script to /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.221s] Installing talker script to /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.221s] Installing talker_random script to /home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.222s] writing list of installed files to '/home/u22c1001/ros2_ws/src/mypkg/build/mypkg/install.log'
+[1.253s] Invoked command in '/home/u22c1001/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/u22c1001/ros2_ws/src/mypkg/build/mypkg/prefix_override:/home/u22c1001/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/build install --record /home/u22c1001/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed
