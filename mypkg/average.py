@@ -2,20 +2,19 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int16
 
-class Average():
-    def __init__(self, node):
-        self.pub = node.create_publisher(Int16, "countup", 10)
-        self.n = 0
-        node.create_timer(0.5, self.cb)
+rclpy.init()
+node = Node("average")            #ノード作成（nodeという「オブジェクト」を作成）
+sub = node.create_subscription(Int16, "random", cb, 10)
+pub = node.create_publisher(Int16, "countup", 10)   #パブリッシャのオブジェクト作成
+numbers = [] #記録用リスト
 
-    def cb(self):
-        msg = Int16()
-        msg.data = self.n
-        self.pub.publish(msg)
-        self.n += 1
+def cb():          #17行目で定期実行されるコールバック関数
+    global numbers #関数を抜けてもnがリセットされないようにしている
+    msg = Int16()  #メッセージの「オブジェクト」
+    numbers.append(msg.data)
+    if len(numbers) > 10:
+        del a[0]
+    msg.data = sum(numbers) / len(numbers)   #msgオブジェクトの持つdataにnumbersの平均値を結び付け
+    pub.publish(msg)        #pubの持つpublishでメッセージ送信
 
-def main():
-    rclpy.init()
-    node = Node("talker")
-    additio = Addition(node)
-    rclpy.spin(node)
+rclpy.spin(node)            #実行（無限ループ）
