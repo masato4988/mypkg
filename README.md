@@ -45,7 +45,7 @@ $ ros2 run mypkg talker
 ```
 $ ros2 run mypkg listener
 ```
-#### 表示例
+表示例:
 もし，talker が実行されていた場合，次のように表示される．
 ```
 [INFO] [1703740904.485308656] [listener]: Listen: 29
@@ -85,8 +85,8 @@ $ ros2 run mypkg average
 ```
 $ ros2 run mypkg listener_average
 ```
-### 表示例
-もし，talker_random，average が実行されていれば，次のように表示される．
+表示例:
+もし，talker_random，average が実行されている場合，次のように表示される．
 ```
 [listener_average-3] [INFO] [1703741656.120329832] [listener_average]: Listen_average: 54
 [listener_average-3] [INFO] [1703741656.613221926] [listener_average]: Listen_average: 41
@@ -106,6 +106,58 @@ $ ros2 run mypkg listener_average
                           .
 ```
 
+## launchを使って実行する場合
+### talk_listen.launch.py
+ターミナルで次のコマンドを実行する．
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+表示例:
+次のような表示がされる．
+```
+[listener-2] [INFO] [1703742583.420727471] [listener]: Listen: 0
+[listener-2] [INFO] [1703742583.913882258] [listener]: Listen: 1
+[listener-2] [INFO] [1703742584.414334535] [listener]: Listen: 2
+[listener-2] [INFO] [1703742584.914358592] [listener]: Listen: 3
+[listener-2] [INFO] [1703742585.413914346] [listener]: Listen: 4
+[listener-2] [INFO] [1703742585.914636470] [listener]: Listen: 5
+[listener-2] [INFO] [1703742586.414317193] [listener]: Listen: 6
+[listener-2] [INFO] [1703742586.915439958] [listener]: Listen: 7
+[listener-2] [INFO] [1703742587.414270776] [listener]: Listen: 8
+[listener-2] [INFO] [1703742587.915263867] [listener]: Listen: 9
+[listener-2] [INFO] [1703742588.415341537] [listener]: Listen: 10
+[listener-2] [INFO] [1703742588.915387408] [listener]: Listen: 11
+                          .
+                          .
+                          .
+```
+### random_average.launch.py
+ターミナルで次のコマンドを実行する．
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+表示例:
+次のような表示がされる．
+```
+[listener_average-3] [INFO] [1703742801.150613060] [listener_average]: Listen_average: 42
+[listener_average-3] [INFO] [1703742801.640017629] [listener_average]: Listen_average: 57
+[listener_average-3] [INFO] [1703742802.141153465] [listener_average]: Listen_average: 51
+[listener_average-3] [INFO] [1703742802.640023652] [listener_average]: Listen_average: 45
+[listener_average-3] [INFO] [1703742803.140174406] [listener_average]: Listen_average: 36
+[listener_average-3] [INFO] [1703742803.640198703] [listener_average]: Listen_average: 46
+[listener_average-3] [INFO] [1703742804.141056168] [listener_average]: Listen_average: 46
+[listener_average-3] [INFO] [1703742804.639158912] [listener_average]: Listen_average: 50
+[listener_average-3] [INFO] [1703742805.139810696] [listener_average]: Listen_average: 45
+[listener_average-3] [INFO] [1703742805.640461889] [listener_average]: Listen_average: 45
+[listener_average-3] [INFO] [1703742806.140539148] [listener_average]: Listen_average: 46
+[listener_average-3] [INFO] [1703742806.640725931] [listener_average]: Listen_average: 43
+[listener_average-3] [INFO] [1703742807.140786713] [listener_average]: Listen_average: 42
+[listener_average-3] [INFO] [1703742807.639774204] [listener_average]: Listen_average: 46
+[listener_average-3] [INFO] [1703742808.140784930] [listener_average]: Listen_average: 54
+                          .
+                          .
+                          .
+```
 
 ## 必要なソフトウェア
 * python3
