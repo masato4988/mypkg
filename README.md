@@ -35,11 +35,6 @@
 * ノード（talker_random，average，listener_average）を同時に立ち上げることができます．
 
 ## 使用方法
-### インストール方法
-ターミナルで次のコマンドを実行する．
-```
-$ git clone https://github.com/masato4988/mypkg.git
-```
 ### talker
 ターミナルで次のコマンドを実行する．
 ```
@@ -50,7 +45,7 @@ $ ros2 run mypkg talker
 ```
 $ ros2 run mypkg listener
 ```
-### 表示例
+#### 表示例
 もし，talker が実行されていた場合，次のように表示される．
 ```
 [INFO] [1703740904.485308656] [listener]: Listen: 29
