@@ -12,5 +12,5 @@ def cb(msg):
 
 rclpy.init()
 node = Node("listener_average")
-pub = node.create_subscription(Int16, "average", cb, 10)
+pub = node.create_subscription(Int16, "numbers_average", cb, 10)
 rclpy.spin(node)
