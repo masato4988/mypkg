@@ -160,8 +160,8 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 
 ## 必要なソフトウェア
-* python3
- * テスト済み: python3.8.10
+* Python3
+ * テスト済み: Python3.8.10
 * ROS 2
 
 ## テスト環境
