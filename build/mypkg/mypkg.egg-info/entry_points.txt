@@ -1,7 +1,0 @@
-[console_scripts]
-average = mypkg.average:main
-listener = mypkg.listener:main
-listener_average = mypkg.listener_average:main
-talker = mypkg.talker:main
-talker_random = mypkg.talker_random:main
-
