@@ -10,15 +10,15 @@
 
 ## 各ノードの説明
 ### talker
-* 0から0.5秒ごとにカウントアップしていき，その値をトピック /countup に出力していきます．
+* 0.5秒ごとに0からカウントアップしていき，その値をトピック /countup に出力していく．
 ### listener
-* トピック /countup からデータを取得し出力します．
+* トピック /countup からデータを取得し出力する．
 ### talker_random
-* 0.5秒ごとに0から100の範囲で整数の乱数を生成し，トピック /random に出力していきます．
+* 0.5秒ごとに0から100の範囲で整数の乱数を生成し，トピック /random に出力していく．
 ### average
-* トピック /random からデータを取得・記録し，過去10個のデータの平均値を，トピック /average に出力していきます．
+* トピック /random からデータを取得・記録し，過去10個のデータの平均値を，トピック /average に出力していく．
 ### listener_average
-* トピック /average からデータを取得し出力します．
+* トピック /average からデータを取得し出力する．
 
 ## トピックの説明
 ### /countup
@@ -30,9 +30,9 @@
 
 ## launchファイル
 ### talke_listen.lauch.py
-* ノード（talker，listener）を同時に立ち上げることができます．
+* ノード（talker，listener）を同時に立ち上げることができる．
 ### random_average.launch.py
-* ノード（talker_random，average，listener_average）を同時に立ち上げることができます．
+* ノード（talker_random，average，listener_average）を同時に立ち上げることができる．
 
 ## 使用方法
 ### talker
@@ -45,7 +45,7 @@ $ ros2 run mypkg talker
 ```
 $ ros2 run mypkg listener
 ```
-表示例:
+* 表示例:
 もし，talker が実行されていた場合，次のように表示される．
 ```
 [INFO] [1703740904.485308656] [listener]: Listen: 29
@@ -85,7 +85,7 @@ $ ros2 run mypkg average
 ```
 $ ros2 run mypkg listener_average
 ```
-表示例:
+* 表示例:
 もし，talker_random，average が実行されている場合，次のように表示される．
 ```
 [listener_average-3] [INFO] [1703741656.120329832] [listener_average]: Listen_average: 54
@@ -112,7 +112,7 @@ $ ros2 run mypkg listener_average
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
-表示例:
+* 表示例:
 次のような表示がされる．
 ```
 [listener-2] [INFO] [1703742583.420727471] [listener]: Listen: 0
@@ -136,7 +136,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
-表示例:
+* 表示例:
 次のような表示がされる．
 ```
 [listener_average-3] [INFO] [1703742801.150613060] [listener_average]: Listen_average: 42
