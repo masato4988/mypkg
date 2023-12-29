@@ -3,7 +3,8 @@
 * このリポジトリは ROS 2 のパッケージです．
 * talker，listener，talker_random，avrtagr，listener_averageというノードがあります．
 * talk_listen.launch.py, random_average.launch.pyというlaunchファイルがあります．
-
+* talkerとlisteerを使うと，０からカウントアップしていき，それを表示することができます.
+* talker_randomとaverageとlistener_averageを使うと， 0から100の整数の乱数を生成し，そのデータ１０個の平均を求め，表示することができます．
 
 
 [![test](https://github.com/masato4988/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/masato4988/mypkg/actions/workflows/test.yml)
